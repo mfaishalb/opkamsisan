@@ -13,7 +13,7 @@
     <canvas id="matrix-canvas"></canvas>
     <nav>
         <div class="container">
-            <a href="index.php" class="logo">GELITIKS🛡️</a>
+            <a href="index.php" class="logo">LetsForensic🛡️</a>
             <ul>
                 <li><a href="index.php">Beranda</a></li>
                 <li><a href="index.php#tentang" class="active">Tentang</a></li>

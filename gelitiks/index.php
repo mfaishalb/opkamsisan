@@ -29,7 +29,7 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
     <canvas id="matrix-canvas"></canvas>
     <nav>
         <div class="container">
-            <a href="index.php" class="logo">GELITIKS🛡️</a>
+            <a href="index.php" class="logo">LetsForensic🛡️</a>
             <ul>
                 <li><a href="index.php" class="active">Beranda</a></li>
                 <li><a href="tentang.php">Tentang</a></li>
@@ -52,6 +52,20 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
                     <p>Setiap klik, setiap login, setiap koneksi adalah potensi risiko. Mengerti dasarnya bukan lagi pilihan, tapi keharusan.</p>
                 </div>
                 <div class="features-grid">
+                    <a href="/opkamsisan/d21/" class="feature-card-link" target="_blank">
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-image-wrapper">
+             <img src="d21.png" alt="Proyek D21" class="card-image">
+        </div>
+        <div class="card-content">
+            <h3>Proyek D21</h3>
+            <p>Lihat dan jelajahi proyek lain yang terintegrasi langsung di dalam platform LetsForensic.</p>
+            <span class="baca-selengkapnya">Buka Proyek →</span>
+        </div>
+    </div>
+</a>
+
+
                     <a href="artikel-malware.php?topic=malware" class="feature-card-link">
                         <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                             <img src="https://image.web.id/images/Apa-itu-Malware-Mengetahui-Ancaman-dan-Cara-Mencegahnya-1140x570.jpg" alt="Ilustrasi Malware" class="card-image">
@@ -181,7 +195,7 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
     </main>
     <footer>
         <div class="container">
-            <p>&copy; <?php echo date("Y"); ?> GELITIKS. Sebuah Inisiatif untuk Keamanan Digital.</p>
+            <p>&copy; <?php echo date("Y"); ?> LetsForensic. Sebuah Inisiatif untuk Keamanan Digital.</p>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

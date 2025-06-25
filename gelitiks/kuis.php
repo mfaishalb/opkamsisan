@@ -63,7 +63,7 @@ if($is_quiz_finished) $progress_percentage = 100;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuis Utama - GELITIKS</title>
+    <title>Kuis Utama - LetsForensic🛡️</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,7 +76,7 @@ if($is_quiz_finished) $progress_percentage = 100;
     <canvas id="matrix-canvas"></canvas>
     <nav>
         <div class="container">
-            <a href="index.php" class="logo"><img src="logo-gelitiks.png" alt="" class="logo-icon"><span>GELITIKS</span></a>
+            <a href="index.php" class="logo"><img src="logo-gelitiks.png" alt="" class="logo-icon"><span>LetsForensic🛡️</span></a>
             <ul>
                 <li><a href="index.php">Beranda</a></li>
                 <li><a href="kuis.php" class="active">Kuis Utama</a></li>

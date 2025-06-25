@@ -62,7 +62,7 @@ else {
 <body class="page-background">
     <nav>
         <div class="container">
-            <a href="index.php" class="logo">GELITIKS🛡️</a>
+            <a href="index.php" class="logo">LetsForensic🛡️</a>
             <ul>
                 <li><a href="index.php">Beranda</a></li>
                 <li><a href="topik.php?topic=<?php echo $topic_key; ?>">Daftar Bab</a></li>
