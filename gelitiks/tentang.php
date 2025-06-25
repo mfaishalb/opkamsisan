@@ -32,7 +32,7 @@
     <header class="topic-header">
         <div class="container" data-aos="fade-in">
             <div class="topic-header-icon"><i class="fas fa-info-circle"></i></div>
-            <h1>Tentang GELITIKS</h1>
+            <h1>Tentang LetsForensic</h1>
             <p>Gerakan Literasi Keamanan Siber untuk Indonesia yang Lebih Aman</p>
         </div>
     </header>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="about-content" data-aos="fade-left" data-aos-delay="100">
                     <h2>Misi Kami</h2>
-                    <p>GELITIKS lahir dari keprihatinan mendalam terhadap maraknya kasus kejahatan siber di Indonesia. Misi kami sederhana: Memberikan edukasi keamanan siber yang mudah diakses, mudah dipahami, dan gratis bagi semua orang. Kami percaya bahwa pengetahuan adalah perisai terbaik untuk melindungi diri di dunia digital.</p>
+                    <p>LetsForensic lahir dari keprihatinan mendalam terhadap maraknya kasus kejahatan siber di Indonesia. Misi kami sederhana: Memberikan edukasi keamanan siber yang mudah diakses, mudah dipahami, dan gratis bagi semua orang. Kami percaya bahwa pengetahuan adalah perisai terbaik untuk melindungi diri di dunia digital.</p>
                 </div>
             </div>
         </section>
