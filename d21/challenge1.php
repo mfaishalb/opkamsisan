@@ -49,17 +49,15 @@ $conn->close();
       <?php endif; ?>
     </div>
 
-    <div class="challenge-box">
+    <div class="challenge-box mt-4">
   <h3>// HINTS</h3>
-  <button class="btn-hint" onclick="showHint(1)">Minta Hint 1</button>
-  <div id="hint1" class="hint">[HINT 1]: File ini gambar, tapi sepertinya ada data tersembunyi di balik warna tertentu.</div>
+  <button type="button" class="btn-hint" onclick="showHintModal('Hint 1', 'File ini gambar, tapi sepertinya ada data tersembunyi di balik warna tertentu.')">Minta Hint 1</button>
 
-  <button class="btn-hint" onclick="showHint(2)">Minta Hint 2</button>
-  <div id="hint2" class="hint">[HINT 2]: Gunakan `zsteg` untuk mengecek apakah ada yang disisipkan lewat channel warna (R/G/B).</div>
+  <button type="button" class="btn-hint" onclick="showHintModal('Hint 2', 'Gunakan `zsteg` untuk mengecek apakah ada yang disisipkan lewat channel warna (R/G/B).')">Minta Hint 2</button>
 
-  <button class="btn-hint" onclick="showHint(3)">Minta Hint 3</button>
-  <div id="hint3" class="hint">[HINT 3]: Hati-hati dengan data base64. Jangan buru-buru decode—pahami dulu dari mana asalnya.</div>
+  <button type="button" class="btn-hint" onclick="showHintModal('Hint 3', 'Hati-hati dengan data base64. Jangan buru-buru decode—pahami dulu dari mana asalnya.')">Minta Hint 3</button>
 </div>
+
 
 
     <hr style="border-color: var(--border-color);">

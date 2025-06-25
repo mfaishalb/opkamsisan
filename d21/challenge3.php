@@ -49,17 +49,15 @@ $conn->close();
       <?php endif; ?>
     </div>
 
-   <div class="challenge-box">
+   <div class="challenge-box mt-4">
   <h3>// HINTS</h3>
-  <button class="btn-hint" onclick="showHint(1)">Minta Hint 1</button>
-  <div id="hint1" class="hint">[HINT 1]: Gambar ini kelihatan polos, tapi perhatikan metadatanya.</div>
+  <button type="button" class="btn-hint" onclick="showHintModal('Hint 1', 'Gambar ini kelihatan polos, tapi perhatikan metadatanya.')">Minta Hint 1</button>
 
-  <button class="btn-hint" onclick="showHint(2)">Minta Hint 2</button>
-  <div id="hint2" class="hint">[HINT 2]: Gunakan tools seperti `exiftool` untuk melihat metadata. Kadang flag disisipkan di sana.</div>
+  <button type="button" class="btn-hint" onclick="showHintModal('Hint 2', 'Gunakan tools seperti `exiftool` untuk melihat metadata. Kadang flag disisipkan di sana.')">Minta Hint 2</button>
 
-  <button class="btn-hint" onclick="showHint(3)">Minta Hint 3</button>
-  <div id="hint3" class="hint">[HINT 3]: Kalau kamu menemukan string base64 (`==` di akhir), coba decode isinya.</div>
+  <button type="button" class="btn-hint" onclick="showHintModal('Hint 3', 'Kalau kamu menemukan string base64 (`==` di akhir), coba decode isinya.')">Minta Hint 3</button>
 </div>
+
 
     <hr style="border-color: var(--border-color);">
 

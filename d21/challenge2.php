@@ -46,14 +46,14 @@ $challenge = $result->fetch_assoc();
     </div>
 
     <div class="challenge-box mt-4">
-      <h3>// HINTS</h3>
-      <button type="button" class="btn btn-primary" onclick="showHintModal('Hint 1', 'Coba periksa file signature atau headernya. Apakah sesuai?')">
-        Minta Hint 1
-      </button>
-      <button type="button" class="btn btn-primary" onclick="showHintModal('Hint 2', 'Tools seperti `binwalk`, `foremost`, atau hex editor bisa sangat membantu.')">
-        Minta Hint 2
-      </button>
-    </div>
+  <h3>// HINTS</h3>
+  <button type="button" class="btn-hint" onclick="showHintModal('Hint 1', 'Kamu cuma dapat gambar biasa. Tapi apakah benar hanya itu isinya?')">Minta Hint 1</button>
+
+  <button type="button" class="btn-hint" onclick="showHintModal('Hint 2', 'Coba gunakan perintah `strings` atau buka di hex editor. Ada sesuatu tersembunyi di dalamnya.')">Minta Hint 2</button>
+
+  <button type="button" class="btn-hint" onclick="showHintModal('Hint 3', 'Flag biasanya dimulai dengan `picoCTF{...}`. Cari pola itu dalam hex atau dump string-nya.')">Minta Hint 3</button>
+</div>
+
 
     <div class="challenge-box mt-4">
         <h3>// SUBMIT FLAG</h3>
