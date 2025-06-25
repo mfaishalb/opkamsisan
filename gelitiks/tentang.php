@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang GELITIKS - Gerakan Literasi Keamanan Siber</title>
+    <title>Tentang LetsForensic - Gerakan Literasi Keamanan Siber</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,7 @@
         <section class="about-section">
             <div class="container about-container">
                 <div class="about-image" data-aos="fade-right">
-                    <img src="kapeLogo.png" alt="Misi GELITIKS">
+                    <img src="kapeLogo.png" alt="Misi LetsForensic">
                 </div>
                 <div class="about-content" data-aos="fade-left" data-aos-delay="100">
                     <h2>Misi Kami</h2>
@@ -79,7 +79,7 @@
     
     <footer>
         <div class="container">
-            <p>© <?php echo date("Y"); ?> GELITIKS. Semua Hak Cipta Dilindungi.</p>
+            <p>© <?php echo date("Y"); ?> LetsForensic. Semua Hak Cipta Dilindungi.</p>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

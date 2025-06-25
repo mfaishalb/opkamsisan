@@ -76,7 +76,7 @@ if($is_quiz_finished) $progress_percentage = 100;
     <canvas id="matrix-canvas"></canvas>
     <nav>
         <div class="container">
-            <a href="index.php" class="logo"><img src="logo-gelitiks.png" alt="" class="logo-icon"><span>GELITIKS</span></a>
+            <a href="index.php" class="logo"><img src="logo-gelitiks.png" alt="" class="logo-icon"><span>LetsForensic🛡️</span></a>
             <ul>
                 <li><a href="index.php">Beranda</a></li>
                 <li><a href="kuis.php" class="active">Kuis Utama</a></li>
