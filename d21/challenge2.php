@@ -50,13 +50,17 @@ $conn->close();
     </div>
 
     <div class="challenge-box">
-      <h3>// HINTS</h3>
-      <button class="btn-hint" onclick="showHint(1)">Minta Hint 1</button>
-      <div id="hint1" class="hint">[HINT 1]: Coba periksa file signature atau headernya. Apakah sesuai?</div>
+  <h3>// HINTS</h3>
+  <button class="btn-hint" onclick="showHint(1)">Minta Hint 1</button>
+  <div id="hint1" class="hint">[HINT 1]: Kamu cuma dapat gambar biasa. Tapi apakah benar hanya itu isinya?</div>
 
-      <button class="btn-hint" onclick="showHint(2)">Minta Hint 2</button>
-      <div id="hint2" class="hint">[HINT 2]: Tools seperti `binwalk`, `foremost`, atau hex editor bisa sangat membantu.</div>
-    </div>
+  <button class="btn-hint" onclick="showHint(2)">Minta Hint 2</button>
+  <div id="hint2" class="hint">[HINT 2]: Coba gunakan perintah `strings` atau buka di hex editor. Ada sesuatu tersembunyi di dalamnya.</div>
+
+  <button class="btn-hint" onclick="showHint(3)">Minta Hint 3</button>
+  <div id="hint3" class="hint">[HINT 3]: Flag biasanya dimulai dengan `picoCTF{...}`. Cari pola itu dalam hex atau dump string-nya.</div>
+</div>
+
 
     <hr style="border-color: var(--border-color);">
 
