@@ -76,68 +76,40 @@ $conn->close();
 
   <script src="js/background.js"></script>
   <script>
-    function showHint(num) {
-      document.getElementById(`hint${num}`).style.display = 'block';
+    // Fungsi untuk menampilkan modal hint
+    function showHintModal(title, body) {
+        document.getElementById('hintModalLabel').textContent = title;
+        document.getElementById('hintModalBody').textContent = body;
+        var hintModal = new bootstrap.Modal(document.getElementById('hintModal'));
+        hintModal.show();
     }
 
+    // Fungsi untuk submit flag (AJAX)
     document.getElementById('submitForm').addEventListener('submit', function(e) {
-        e.preventDefault(); // Mencegah form dari refresh halaman
-
+        e.preventDefault();
         const form = e.target;
         const formData = new FormData(form);
         const resultElement = document.getElementById('result');
-
         resultElement.textContent = 'Mengirim sinyal...';
-        resultElement.className = '';
+        resultElement.className = 'text-white-50';
 
         fetch('submit.php', {
             method: 'POST',
             body: formData
         })
         .then(response => response.json())
-        // ...
-.then(data => {
-    if (data.status === 'success') {
-        const formElement = document.getElementById('submitForm');
-        const inputElement = document.getElementById('flagInput');
-        
-        // Nonaktifkan input dan tambahkan animasi
-        inputElement.disabled = true;
-        formElement.classList.add('success-anim');
-        
-        // Hapus pesan "Mengirim sinyal..."
-        resultElement.className = 'success';
-        resultElement.textContent = ''; 
-
-        // Tampilkan pesan sukses dengan efek ketik
-        typeEffect(resultElement, data.message, 50);
-
-    } else {
-        // Jika gagal, tampilkan pesan error seperti biasa
-        resultElement.textContent = data.message;
-        resultElement.className = 'error';
-    }
-})
-// ...
-
-// Jangan lupa tambahkan fungsi typeEffect di dalam <script> di challenge.php
-// atau pastikan ia terhubung dari script.js
-function typeEffect(element, text, speed = 75) {
-    let i = 0;
-    element.innerHTML = "";
-    function typing() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typing, speed);
-        }
-    }
-    typing();
-}
+        .then(data => {
+            resultElement.textContent = data.message;
+            if (data.status === 'success') {
+                resultElement.className = 'text-success'; // Menggunakan class Bootstrap
+            } else {
+                resultElement.className = 'text-danger'; // Menggunakan class Bootstrap
+            }
+        })
         .catch(error => {
             console.error('Error:', error);
             resultElement.textContent = 'Terjadi gangguan transmisi.';
-            resultElement.className = 'error';
+            resultElement.className = 'text-danger';
         });
     });
   </script>
