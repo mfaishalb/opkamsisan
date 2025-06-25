@@ -59,7 +59,7 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
         </div>
         <div class="card-content">
             <h3>Proyek D21</h3>
-            <p>Lihat dan jelajahi proyek lain yang terintegrasi langsung di dalam platform GELITIKS.</p>
+            <p>Lihat dan jelajahi proyek lain yang terintegrasi langsung di dalam platform LetsForensic.</p>
             <span class="baca-selengkapnya">Buka Proyek →</span>
         </div>
     </div>
@@ -194,7 +194,7 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
     </main>
     <footer>
         <div class="container">
-            <p>&copy; <?php echo date("Y"); ?> GELITIKS. Sebuah Inisiatif untuk Keamanan Digital.</p>
+            <p>&copy; <?php echo date("Y"); ?> LetsForensic. Sebuah Inisiatif untuk Keamanan Digital.</p>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

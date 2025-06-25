@@ -58,19 +58,19 @@
                         <img src="potoical.jpg" alt="Foto Tim 1" class="team-photo">
                         <h3>Muhammad Faishal Bushoiri</h3>
                         <p class="team-role">Project Lead & Developer</p>
-                        <p class="team-bio">Tulis deskripsi singkat tentang anggota tim pertama di sini. Jelaskan peran atau kontribusinya dalam proyek GELITIKS.</p>
+                        <p class="team-bio"></p>
                     </div>
                     <div class="team-card" data-aos="fade-up" data-aos-delay="200">
                         <img src="potoaishwa.jpg" alt="Foto Tim 2" class="team-photo">
                         <h3>Ni Putu Aishwara Kusumaningtyas Sudana Putri</h3>
                         <p class="team-role">Content & Research Lead</p>
-                        <p class="team-bio">Tulis deskripsi singkat tentang anggota tim kedua di sini. Jelaskan peran atau kontribusinya dalam proyek GELITIKS.</p>
+                        <p class="team-bio"></p>
                     </div>
                     <div class="team-card" data-aos="fade-up" data-aos-delay="300">
                         <img src="potonelson.jpg" alt="Foto Tim 3" class="team-photo">
                         <h3>Rio Nelson Caesar Simorangkir</h3>
                         <p class="team-role">UI/UX & Community Manager</p>
-                        <p class="team-bio">Tulis deskripsi singkat tentang anggota tim ketiga di sini. Jelaskan peran atau kontribusinya dalam proyek GELITIKS.</p>
+                        <p class="team-bio">.</p>
                     </div>
                 </div>
             </div>
