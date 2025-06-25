@@ -45,29 +45,27 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
         </div>
     </header>
     <main>
-        <section id="tentang" class="info-section">
+         <section id="tentang" class="info-section">
             <div class="container">
                 <div class="section-title" data-aos="fade-up">
                     <h2>Mengapa Keamanan Siber Penting?</h2>
                     <p>Setiap klik, setiap login, setiap koneksi adalah potensi risiko. Mengerti dasarnya bukan lagi pilihan, tapi keharusan.</p>
                 </div>
                 <div class="features-grid">
-                   
                     <a href="/opkamsisan/d21/" class="feature-card-link" target="_blank">
-        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-             <div class="card-image-wrapper">
-                 <img src="d21.png" alt="Proyek D21" class="card-image">
-              </div>
-                  <div class="card-content">
-                    <h3>Proyek D21</h3>
-                    <p>Lihat dan jelajahi proyek lain yang terintegrasi langsung di dalam platform LetsForensic.</p>
-                    <span class="baca-selengkapnya">Buka Proyek →</span>
-                   </div>
-               </div>
-             </a>
-             <a href="artikel-malware.php?topic=malware" class="feature-card-link">
+                          <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                          <div class="card-image-wrapper"><img src="d21.png" alt="Proyek D21" class="card-image">
+                           </div>
+                            <div class="card-content">
+                                <h3>CTF CHALLENGE</h3>
+                                <p>JLihat dan jelajahi proyek lain yang terintegrasi langsung di dalam platform LetsForensic.</p>
+                                <span class="baca-selengkapnya">Baca Selengkapnya →</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="artikel-malware.php?topic=malware" class="feature-card-link">
                         <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                            <img src="https://image.web.id/images/Apa-itu-Malware-Mengetahui-Ancaman-dan-Cara-Mencegahnya-1140x570.jpg" alt="Ilustrasi Malware" class="card-image">
+                            <div class="card-image-wrapper"><img src="https://image.web.id/images/Apa-itu-Malware-Mengetahui-Ancaman-dan-Cara-Mencegahnya-1140x570.jpg" alt="Ilustrasi Malware" class="card-image"></div>
                             <div class="card-content">
                                 <h3>Lindungi dari Malware</h3>
                                 <p>Jauhkan perangkatmu dari virus dan ransomware yang dapat merusak dan mencuri datamu.</p>
@@ -75,9 +73,9 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
                             </div>
                         </div>
                     </a>
-                    <a href="artikel-phishing.php?topic=phishing" class="feature-card-link">
+                    <a href="artikel-phising.php?topic=phishing" class="feature-card-link">
                         <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYEbWJ7sb57vqTkMX5qCu_M4P466NdRHlliQ&s" alt="Ilustrasi Phishing" class="card-image">
+                             <div class="card-image-wrapper"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYEbWJ7sb57vqTkMX5qCu_M4P466NdRHlliQ&s" alt="Ilustrasi Phishing" class="card-image"></div>
                             <div class="card-content">
                                 <h3>Waspada Phishing</h3>
                                 <p>Belajar mengenali email dan pesan palsu yang mencoba menipu untuk mendapatkan data pribadimu.</p>
@@ -87,7 +85,7 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
                     </a>
                     <a href="artikel-password.php?topic=password" class="feature-card-link">
                         <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                            <img src="https://www.teknosid.com/wp-content/uploads/2020/02/Apa-itu-Password.jpg" alt="Ilustrasi Password" class="card-image">
+                             <div class="card-image-wrapper"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3zzn4hvqEKv2Gqxynat-7zZKQmYoRAYeUvQ&s" alt="Ilustrasi Password" class="card-image"></div>
                             <div class="card-content">
                                 <h3>Password yang Kuat</h3>
                                 <p>Kunci digitalmu adalah pertahanan pertama. Pelajari cara membuat password yang anti-bobol.</p>
@@ -95,9 +93,24 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
                             </div>
                         </div>
                     </a>
+                    <div class="feature-card coming-soon" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-image-wrapper"><img src="https://static.vecteezy.com/system/resources/thumbnails/003/582/701/small_2x/coming-soon-background-illustration-template-design-free-vector.jpg" alt="Ilustrasi Social Engineering" class="card-image"></div>
+                        <div class="card-content">
+                            <h3>Rekayasa Sosial (Segera Hadir)</h3>
+                            <p>Memahami seni manipulasi psikologis yang digunakan peretas untuk menipu targetnya.</p>
+                            <span class="baca-selengkapnya">COMING SOON</span>
+                        </div>
+                    </div>
+                    <div class="feature-card coming-soon" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card-image-wrapper"><img src="https://static.vecteezy.com/system/resources/thumbnails/003/582/701/small_2x/coming-soon-background-illustration-template-design-free-vector.jpg" alt="Ilustrasi Keamanan Jaringan" class="card-image"></div>
+                        <div class="card-content">
+                            <h3>Keamanan Jaringan (Segera Hadir)</h3>
+                            <p>Mengamankan koneksi Wi-Fi Anda dan mengenali bahaya jaringan publik.</p>
+                            <span class="baca-selengkapnya">COMING SOON</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
         </section>
 
         <section id="modul-pembelajaran" class="modul-section">

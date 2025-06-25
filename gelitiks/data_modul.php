@@ -103,7 +103,52 @@ $learning_data = [
                     3 => ['type' => 'kuis', 'title' => 'Kuis: Manajemen Password', 'duration' => '2 menit', 'question' => "Alat bantu yang paling direkomendasikan untuk mengelola banyak password unik adalah...", 'options' => ["Buku catatan fisik", "File Microsoft Excel", "Password Manager"], 'answer' => 2],
                     4 => ['type' => 'materi', 'title' => 'Panduan Memilih Password Manager', 'duration' => '8 menit', 'content' => "<h3>Memilih Gudang Digital Terbaik Anda</h3><p>Menggunakan Password Manager adalah langkah paling signifikan untuk meningkatkan keamanan akun Anda. Tapi dengan banyaknya pilihan, mana yang terbaik? Berikut adalah panduan untuk memilihnya.</p><h4>1. Memahami Cara Kerjanya</h4><p>Anggap Password Manager sebagai brankas bank digital super aman (disebut <strong>encrypted vault</strong>). Semua password Anda disimpan di dalamnya dalam bentuk terenkripsi. Anda hanya perlu mengingat satu kunci untuk membuka brankas ini, yaitu <strong>Master Password</strong>. Karena ini adalah satu-satunya kunci, pastikan Master Password Anda sangat kuat dan unik!</p><h4>2. Kriteria Penting Saat Memilih</h4><ul><li><strong>Keamanan (Arsitektur Zero-Knowledge):</strong> Ini yang terpenting. Pilih penyedia yang menggunakan arsitektur 'zero-knowledge'. Artinya, hanya Anda yang bisa membuka brankas Anda dengan Master Password. Pihak perusahaan (misal: Bitwarden atau 1Password) sekalipun tidak bisa melihat isi password Anda, bahkan jika mereka mau.</li><li><strong>Kemudahan Penggunaan (User Experience):</strong> Cari yang memiliki antarmuka yang bersih, serta ekstensi browser (untuk PC/Laptop) dan aplikasi mobile (untuk HP) yang andal. Fitur <em>auto-fill</em> yang baik akan sangat memudahkan hidup Anda.</li><li><strong>Fitur Tambahan:</strong> Fitur seperti generator password, penyimpanan catatan aman (secure notes), dan kemampuan berbagi password dengan aman kepada keluarga atau tim adalah nilai tambah yang besar.</li><li><strong>Reputasi dan Audit Keamanan:</strong> Gunakan penyedia yang sudah dikenal luas dan secara rutin menjalani audit keamanan oleh pihak ketiga. Ini menunjukkan transparansi dan komitmen mereka terhadap keamanan.</li></ul><h4>3. Rekomendasi Populer (2025)</h4><blockquote><strong>Bitwarden:</strong> Pilihan terbaik bagi kebanyakan orang. Bersifat <strong>open-source</strong> (kodenya bisa diaudit siapa saja) dan menawarkan paket gratis yang sangat lengkap dan fungsional. Sangat direkomendasikan jika Anda baru memulai.</blockquote><blockquote><strong>1Password:</strong> Dianggap memiliki antarmuka pengguna (UI/UX) terbaik dan fitur untuk keluarga yang sangat baik. Ini adalah pilihan premium (berbayar) yang sangat populer karena kemudahannya.</blockquote><blockquote><strong>KeePass:</strong> Untuk pengguna tingkat lanjut yang menginginkan kontrol penuh. Ini adalah aplikasi offline di mana Anda menyimpan file brankas Anda sendiri (misalnya di komputer atau di Google Drive pribadi). Lebih rumit, tapi memberi Anda kendali 100% atas data Anda.</blockquote><p>Lakukan riset kecil Anda sendiri, tapi memulai dengan salah satu dari tiga ini adalah pilihan yang sangat aman dan tepat.</p>"],            
          ]
+                ],
+                // =================================================================
+    // ===== MODUL BARU 1: REKAYASA SOSIAL (SOCIAL ENGINEERING) =====
+    // =================================================================
+    'rekayasa-sosial' => [
+        'title' => 'Rekayasa Sosial',
+        'subtitle' => 'Seni Memanipulasi Psikologi Manusia',
+        'icon' => 'fa-theater-masks',
+        'chapters' => [
+            1 => [
+                'title' => 'Memahami Manipulasi',
+                'lessons' => [
+                    1 => ['type' => 'materi', 'title' => 'Apa itu Rekayasa Sosial?', 'duration' => '5 menit', 'content' => "<h3>Bukan Sekadar Retas</h3><p>Rekayasa Sosial adalah seni memanipulasi, memengaruhi, atau menipu orang lain agar mereka memberikan informasi rahasia atau melakukan tindakan tertentu yang menguntungkan penyerang. Ini adalah serangan terhadap 'human-firewall', yaitu Anda.</p><p>Phishing, Vishing, dan Smishing sebenarnya adalah bagian dari Rekayasa Sosial.</p>"],
+                    2 => ['type' => 'materi', 'title' => 'Studi Kasus: Penipuan CEO', 'duration' => '6 menit', 'content' => "<h3>Perintah Palsu dari 'Atasan'</h3><p>Seorang penipu melakukan riset dan mengetahui nama CEO dan Manajer Keuangan sebuah perusahaan. Ia kemudian membuat alamat email palsu yang sangat mirip dengan email CEO dan mengirimkan email ke Manajer Keuangan tersebut.</p><blockquote>Emailnya berisi: 'Saya sedang dalam rapat penting dan butuh Anda segera mentransfer dana sebesar Rp 100 Juta ke rekening vendor ini untuk proyek rahasia. Jangan bicarakan ini dengan siapa pun.'</blockquote><p>Karena merasa ini perintah mendesak dari atasan, sang manajer melakukan transfer tanpa verifikasi. Ini adalah contoh klasik Business Email Compromise (BEC), salah satu bentuk rekayasa sosial yang sangat merugikan.</p>"],
+                    3 => ['type' => 'kuis', 'title' => 'Kuis: Konsep Dasar', 'duration' => '2 menit', 'question' => "Target utama dari serangan Rekayasa Sosial adalah...", 'options' => ["Kelemahan sistem operasi", "Psikologi dan emosi manusia", "Kabel jaringan"], 'answer' => 1 ],
+                ]
+            ],
+        ]
+    ],
+
+    // =================================================================
+    // ===== MODUL BARU 2: KEAMANAN JARINGAN DASAR =====
+    // =================================================================
+    'keamanan-jaringan' => [
+        'title' => 'Keamanan Jaringan Dasar',
+        'subtitle' => 'Mengamankan Koneksi Internet Anda',
+        'icon' => 'fa-wifi',
+        'chapters' => [
+            1 => [
+                'title' => 'Ancaman di Jaringan Publik',
+                'lessons' => [
+                    1 => ['type' => 'materi', 'title' => 'Bahaya Wi-Fi Publik', 'duration' => '5 menit', 'content' => "<h3>Koneksi Gratis, Risiko Mahal</h3><p>Wi-Fi gratis di kafe, bandara, atau hotel memang nyaman, tapi juga berbahaya. Jaringan ini seringkali tidak terenkripsi, artinya data yang Anda kirim (termasuk password atau data pribadi) bisa 'diintip' oleh siapa saja yang berada di jaringan yang sama. Serangan ini disebut <strong>Man-in-the-Middle (MITM)</strong>.</p>"],
+                    2 => ['type' => 'materi', 'title' => 'Jebakan "Evil Twin"', 'duration' => '6 menit', 'content' => "<h3>Wi-Fi Kembar yang Jahat</h3><p>Penipu bisa membuat hotspot Wi-Fi palsu dengan nama yang sangat mirip dengan Wi-Fi asli (misal: 'KopiKenangan_FreeWiFi' vs 'KopiKenangan_WiFiGratis'). Ini disebut serangan <strong>Evil Twin</strong>.</p><p>Jika Anda salah terhubung ke jaringan palsu ini, semua lalu lintas internet Anda akan melewati perangkat peretas, memungkinkan mereka untuk mencuri semua data Anda.</p>"],
+                    3 => ['type' => 'kuis', 'title' => 'Kuis: Evil Twin', 'duration' => '2 menit', 'question' => "Serangan di mana peretas membuat hotspot Wi-Fi palsu disebut...", 'options' => ["Evil Twin", "Man-in-the-Middle", "Trojan"], 'answer' => 0 ],
+                ]
+            ],
+            2 => [
+                'title' => 'Solusi & Praktik Terbaik',
+                'lessons' => [
+                    1 => ['type' => 'materi', 'title' => 'Gunakan VPN (Virtual Private Network)', 'duration' => '6 menit', 'content' => "<h3>Terowongan Aman Anda</h3><p>VPN adalah solusi terbaik saat menggunakan jaringan publik. VPN akan mengenkripsi semua lalu lintas data Anda, menciptakan 'terowongan' pribadi yang aman di dalam jaringan publik. Bahkan jika ada yang mengintip, mereka hanya akan melihat data acak yang tidak bisa dibaca.</p>"],
+                    2 => ['type' => 'materi', 'title' => 'Mengamankan Wi-Fi Rumah', 'duration' => '5 menit', 'content' => "<h3>Jangan Lupakan Jaringan Pribadi</h3><p>Pastikan Wi-Fi di rumah Anda juga aman:</p><ul><li>Ganti password default dari router Anda.</li><li>Gunakan enkripsi WPA2 atau WPA3 (jangan WEP atau WPA).</li><li>Buat password Wi-Fi yang kuat dan unik.</li><li>Sembunyikan nama jaringan Anda (SSID) jika memungkinkan.</li></ul>"],
+                    3 => ['type' => 'kuis', 'title' => 'Kuis: Solusi Terbaik', 'duration' => '2 menit', 'question' => "Teknologi yang menciptakan 'terowongan' aman di jaringan publik disebut...", 'options' => ["Antivirus", "Firewall", "VPN"], 'answer' => 2 ],
+                ]
             ]
+        ]
+    ]
         ]
     ]
 ];
