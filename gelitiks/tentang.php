@@ -41,7 +41,7 @@
         <section class="about-section">
             <div class="container about-container">
                 <div class="about-image" data-aos="fade-right">
-                    <img src="logo1.png" alt="Misi GELITIKS">
+                    <img src="kapeLogo.png" alt="Misi GELITIKS">
                 </div>
                 <div class="about-content" data-aos="fade-left" data-aos-delay="100">
                     <h2>Misi Kami</h2>
