@@ -52,8 +52,9 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
                     <p>Setiap klik, setiap login, setiap koneksi adalah potensi risiko. Mengerti dasarnya bukan lagi pilihan, tapi keharusan.</p>
                 </div>
                 <div class="features-grid">
+                   
                     <a href="/opkamsisan/d21/" class="feature-card-link" target="_blank">
-    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
         <div class="card-image-wrapper">
              <img src="d21.png" alt="Proyek D21" class="card-image">
         </div>
@@ -61,12 +62,10 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
             <h3>Proyek D21</h3>
             <p>Lihat dan jelajahi proyek lain yang terintegrasi langsung di dalam platform LetsForensic.</p>
             <span class="baca-selengkapnya">Buka Proyek →</span>
-        </div>
-    </div>
-</a>
-
-
-                    <a href="artikel-malware.php?topic=malware" class="feature-card-link">
+          </div>
+     </div>
+    </a>
+        <a href="artikel-malware.php?topic=malware" class="feature-card-link">
                         <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                             <img src="https://image.web.id/images/Apa-itu-Malware-Mengetahui-Ancaman-dan-Cara-Mencegahnya-1140x570.jpg" alt="Ilustrasi Malware" class="card-image">
                             <div class="card-content">
