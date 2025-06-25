@@ -19,7 +19,7 @@
         <div class="container">
             <a href="index.php" class="logo">
                 <img src="logo-gelitiks.png" alt="" class="logo-icon">
-                <span>GELITIKS🛡️</span>
+                <span>LetsForensic🛡️</span>
             </a>
             <ul>
                 <li><a href="index.php">Beranda</a></li>

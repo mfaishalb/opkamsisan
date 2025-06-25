@@ -29,7 +29,7 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
     <canvas id="matrix-canvas"></canvas>
     <nav>
         <div class="container">
-            <a href="index.php" class="logo">GELITIKS🛡️</a>
+            <a href="index.php" class="logo">LetsForensic🛡️</a>
             <ul>
                 <li><a href="index.php" class="active">Beranda</a></li>
                 <li><a href="tentang.php">Tentang</a></li>

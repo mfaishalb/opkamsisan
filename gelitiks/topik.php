@@ -18,7 +18,7 @@ $topic_data = $learning_data[$topic_key];
 <body class="page-background">
     <nav>
         <div class="container">
-            <a href="index.php" class="logo">GELITIKS🛡️</a>
+            <a href="index.php" class="logo">LetsForensic🛡️</a>
             <ul>
                 <li><a href="index.php">Beranda</a></li>
                 <li><a href="kuis.php" class="button-nav">Kuis Utama</a></li>
