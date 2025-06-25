@@ -40,9 +40,9 @@ CREATE TABLE `challenges` (
 --
 
 INSERT INTO `challenges` (`id`, `title`, `description`, `file_path`, `file_name`) VALUES
-(1, 'Forensik Dasar 1', 'File ini terlihat rusak, tapi ada sesuatu yang berharga tersembunyi di dalamnya. Lakukan analisis dan temukan flag-nya.', 'files/challenge1.zip', 'challenge1.zip'),
-(2, 'Analisis Jaringan', 'Kami merekam sebuah lalu lintas jaringan yang mencurigakan. Analisis file pcap ini dan temukan komunikasi rahasia.', 'files/challenge2.pcapng', 'challenge2.pcapng'),
-(3, 'Steganografi Gambar', 'Sebuah gambar sederhana, namun menyimpan pesan tersembunyi. Apakah Anda bisa mengungkapnya?', 'files/challenge3.png', 'challenge3.png');
+(1, 'Steganografi Dasar 1', 'Kamu cuma dikasih file gambar .png. Tapi kalau dibuka, nggak ada yang aneh', 'files/challenge1.zip', 'challenge1.zip'),
+(2, 'Pengenalan tools foresic 1', 'This garden contains more than it seems..', 'files/challenge2.zip', 'challenge2.zip'),
+(3, 'Pengenalan tools foresic 2', 'A picture is worth a thousand words. Can you find the hidden message?', 'files/challenge3.zip', 'challenge3.zip');
 
 -- --------------------------------------------------------
 

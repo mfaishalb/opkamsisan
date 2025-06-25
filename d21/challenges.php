@@ -22,7 +22,7 @@
                 // Menggunakan kolom grid Bootstrap
                 echo '<div class="col-lg-4 col-md-6">';
                 // Menggunakan komponen Card Bootstrap
-                echo '  <a href="challenge.php?id=' . $row["id"] . '" class="text-decoration-none">';
+                echo '  <a href="challenge'. $row["id"] .'.php?id=' . $row["id"] . '" class="text-decoration-none">';
                 echo '    <div class="card h-100 card-challenge">'; // Tambah class kustom
                 echo '      <div class="card-body text-center">';
                 echo '        <h5 class="card-title text-primary stretched-link"> >> ' . htmlspecialchars($row["title"]) . '</h5>';
