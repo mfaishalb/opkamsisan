@@ -113,57 +113,80 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
             </div>
         </section>
 
-        <section id="modul-pembelajaran" class="modul-section">
-    <div class="container">
-        <div class="section-title" data-aos="fade-up">
-            <h2>Kurikulum Belajar Terstruktur</h2>
-            <p>Pengetahuan adalah perisai terbaik. Modul terstruktur kami dirancang untuk membawamu dari nol hingga paham, satu langkah pada satu waktu.</p>
-        </div>
+       <section id="modul-pembelajaran" class="modul-section">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Kurikulum Belajar Terstruktur</h2>
+                    <p>Pengetahuan adalah perisai terbaik. Modul terstruktur kami dirancang untuk membawamu dari nol hingga paham, satu langkah pada satu waktu.</p>
+                </div>
 
-        <div class="modul-baru-grid">
+                <div class="modul-card-grid">
 
-            <a href="topik.php?topic=malware" class="modul-baru-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="modul-baru-icon">
-                    <i class="fas fa-shield-virus"></i>
-                </div>
-                <h3 class="modul-baru-title">Ancaman Malware</h3>
-                <p class="modul-baru-desc">Pelajari tentang virus, ransomware, dan bagaimana mereka bisa menyusup ke perangkatmu.</p>
-                <div class="modul-baru-meta">
-                    <span><i class="fas fa-book"></i> 5 Bab</span>
-                    <span><i class="fas fa-clock"></i> Total 55 Menit</span>
-                </div>
-                <span class="modul-baru-button">Mulai Belajar</span>
-            </a>
+                    <a href="topik.php?topic=malware" class="modul-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="modul-card-icon"><i class="fas fa-shield-virus"></i></div>
+                        <h3>Ancaman Malware</h3>
+                        <p>Pelajari tentang virus, ransomware, dan bagaimana mereka bisa menyusup ke perangkatmu.</p>
+                    </a>
 
-            <a href="topik.php?topic=phishing" class="modul-baru-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="modul-baru-icon">
-                    <i class="fas fa-fish"></i>
-                </div>
-                <h3 class="modul-baru-title">Jebakan Phishing</h3>
-                <p class="modul-baru-desc">Kenali ciri-ciri penipuan online dan cara menghindarinya agar data tetap aman.</p>
-                <div class="modul-baru-meta">
-                    <span><i class="fas fa-book"></i> 3 Bab</span>
-                    <span><i class="fas fa-clock"></i> Total 54 Menit</span>
-                </div>
-                <span class="modul-baru-button">Mulai Belajar</span>
-            </a>
+                    <a href="topik.php?topic=phishing" class="modul-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="modul-card-icon"><i class="fas fa-fish"></i></div>
+                        <h3>Jebakan Phishing</h3>
+                        <p>Kenali ciri-ciri penipuan online dan cara menghindarinya agar data tetap aman.</p>
+                    </a>
 
-            <a href="topik.php?topic=password" class="modul-baru-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="modul-baru-icon">
-                    <i class="fas fa-key"></i>
-                </div>
-                <h3 class="modul-baru-title">Kekuatan Password</h3>
-                <p class="modul-baru-desc">Temukan seni membuat dan mengelola password yang kuat dan anti-bobol.</p>
-                <div class="modul-baru-meta">
-                    <span><i class="fas fa-book"></i> 3 Bab</span>
-                    <span><i class="fas fa-clock"></i> Total 50 Menit</span>
-                </div>
-                <span class="modul-baru-button">Mulai Belajar</span>
-            </a>
+                    <a href="topik.php?topic=password" class="modul-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="modul-card-icon"><i class="fas fa-key"></i></div>
+                        <h3>Kekuatan Password</h3>
+                        <p>Temukan seni membuat dan mengelola password yang kuat dan anti-bobol.</p>
+                    </a>
+                    
+                    <a href="topik.php?topic=rekayasa-sosial" class="modul-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="modul-card-icon"><i class="fas fa-theater-masks"></i></div>
+                        <h3>Rekayasa Sosial</h3>
+                        <p>Memahami seni manipulasi psikologis yang digunakan peretas untuk menipu targetnya.</p>
+                    </a>
 
-        </div>
+                    <a href="topik.php?topic=keamanan-jaringan" class="modul-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="modul-card-icon"><i class="fas fa-wifi"></i></div>
+                        <h3>Keamanan Jaringan</h3>
+                        <p>Mengamankan koneksi Wi-Fi Anda dan mengenali bahaya jaringan publik.</p>
+                    </a>
+
+                    <a href="topik.php?topic=data-pribadi" class="modul-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="modul-card-icon"><i class="fas fa-user-secret"></i></div>
+                        <h3>Data Pribadi Anda</h3>
+                        <p>Pelajari cara mengelola jejak digital dan menjaga informasi pribadi tetap aman.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+           <main>
+        <section id="glosarium" class="glossary-section">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Glosarium Pejuang Siber</h2>
+                    <p>Kenali istilah-istilah penting dalam medan perang digital. Klik untuk melihat definisi.</p>
+                </div>
+                <div class="glossary-grid" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glossary-card">
+                        <div class="term">VPN</div>
+                        <div class="definition">Singkatan dari Virtual Private Network. Sebuah 'terowongan' aman yang mengenkripsi koneksi internet Anda, sangat penting saat menggunakan Wi-Fi publik.</div>
+                    </div>
+                    <div class="glossary-card"><div class="term">Firewall</div><div class="definition">Tembok digital yang memonitor dan menyaring lalu lintas jaringan, memblokir akses yang tidak sah atau berbahaya.</div></div>
+                    <div class="glossary-card"><div class="term">Enkripsi</div><div class="definition">Proses mengubah data menjadi kode rahasia untuk mencegah akses yang tidak sah. Hanya pihak yang memiliki 'kunci' yang bisa membacanya.</div></div>
+                    <div class="glossary-card"><div class="term">Zero-Day</div><div class="definition">Sebuah celah keamanan pada software yang baru saja ditemukan oleh peretas dan belum diketahui oleh pembuat software, sehingga belum ada 'tambalan' atau perbaikannya.</div></div>
+                    <div class="glossary-card"><div class="term">Botnet</div><div class="definition">Sekumpulan komputer yang telah diinfeksi malware dan dikendalikan dari jarak jauh oleh peretas untuk melancarkan serangan, seperti DDoS.</div></div>
+                    <div class="glossary-card"><div class="term">DDoS</div><div class="definition">Singkatan dari Distributed Denial-of-Service. Serangan yang membanjiri sebuah server dengan lalu lintas internet palsu hingga server tersebut down dan tidak bisa diakses.</div></div>
+                </div>
+            </div>
+        </section>
+
+        </main>
+
+    <div id="glossary-tooltip" class="tooltip">
+        <h4 id="tooltip-term"></h4>
+        <p id="tooltip-definition"></p>
     </div>
-</section>
         <section id="video-edukasi" class="video-section">
             <div class="container">
                 <div class="section-title" data-aos="fade-up">
@@ -214,6 +237,59 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script> AOS.init(); </script>
     <script src="matrix.js"></script>
+    <script src="matrix.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const glossaryCards = document.querySelectorAll('.glossary-card');
+            
+            // Buat elemen tooltip sekali saja dan sembunyikan
+            const tooltip = document.createElement('div');
+            tooltip.id = 'glossary-tooltip';
+            tooltip.className = 'tooltip';
+            document.body.appendChild(tooltip);
+
+            glossaryCards.forEach(card => {
+                card.addEventListener('click', (event) => {
+                    event.stopPropagation();
+
+                    // Cek apakah tooltip untuk kartu ini sudah aktif
+                    const isAlreadyActive = card.classList.contains('tooltip-active');
+                    
+                    // Matikan semua tooltip lain
+                    document.querySelectorAll('.tooltip-active').forEach(activeCard => {
+                        activeCard.classList.remove('tooltip-active');
+                    });
+                    tooltip.classList.remove('active');
+
+
+                    if (!isAlreadyActive) {
+                        const term = card.querySelector('.term').textContent;
+                        const definition = card.querySelector('.definition').textContent;
+                        
+                        tooltip.innerHTML = `<h4>${term}</h4><p>${definition}</p>`;
+
+                        const cardRect = card.getBoundingClientRect();
+                        tooltip.style.left = `${cardRect.left + (cardRect.width / 2)}px`;
+                        tooltip.style.top = `${window.scrollY + cardRect.top - 10}px`;
+
+                        tooltip.classList.add('active');
+                        card.classList.add('tooltip-active');
+                    }
+                });
+            });
+
+            // Klik di mana saja di luar kartu untuk menutup tooltip
+            document.addEventListener('click', function() {
+                document.querySelectorAll('.tooltip-active').forEach(activeCard => {
+                    activeCard.classList.remove('tooltip-active');
+                });
+                tooltip.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const typedTextSpan = document.querySelector(".typed-text");
@@ -256,6 +332,7 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
 
             if(textArray.length) setTimeout(type, newTextDelay + 250);
         });
+        
     </script>
 </body>
 </html>

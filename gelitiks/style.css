@@ -262,84 +262,60 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 /* ==================
-   MODUL PEMBELAJARAN SECTION (DESAIN PREMIUM BARU)
+   MODUL PEMBELAJARAN SECTION (DESAIN KARTU BARU)
    ================== */
 .modul-section {
     padding: 100px 0;
 }
 
-.modul-baru-grid {
+.modul-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-.modul-baru-card {
-    background: var(--light-navy);
-    padding: 35px;
-    border-radius: 12px;
-    text-decoration: none;
-    color: var(--slate);
-    border: 1px solid var(--lightest-navy);
+.modul-card {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    position: relative;
+    align-items: center;
+    text-align: center;
+    background-color: var(--light-navy);
+    padding: 40px 30px;
+    border-radius: 12px;
+    border: 1px solid var(--lightest-navy);
+    text-decoration: none;
+    color: var(--slate);
     transition: all 0.3s ease;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
 }
 
-.modul-baru-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+.modul-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 25px rgba(100, 255, 218, 0.15);
 }
 
-.modul-baru-card .modul-baru-icon {
-    font-size: 2.5rem;
+.modul-card-icon {
+    font-size: 3.5rem;
     color: var(--accent-blue);
     margin-bottom: 25px;
+    transition: transform 0.3s ease;
 }
 
-.modul-baru-card .modul-baru-title {
+.modul-card:hover .modul-card-icon {
+    transform: scale(1.1);
+}
+
+.modul-card h3 {
     font-family: 'Poppins', sans-serif;
     color: var(--lightest-slate);
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
 }
 
-.modul-baru-card .modul-baru-desc {
-    flex-grow: 1; /* Mendorong meta & tombol ke bawah */
-    margin-bottom: 25px;
-}
-
-.modul-baru-card .modul-baru-meta {
-    display: flex;
-    gap: 20px;
-    font-size: 0.9rem;
-    padding-top: 20px;
-    margin-bottom: 25px;
-    border-top: 1px solid var(--lightest-navy);
-}
-
-.modul-baru-card .modul-baru-meta i {
-    margin-right: 8px;
-    color: var(--accent-blue);
-}
-
-.modul-baru-card .modul-baru-button {
-    text-align: center;
-    width: 100%;
-    padding: 14px;
-    border-radius: 8px;
-    border: 1px solid var(--accent-blue);
-    color: var(--accent-blue);
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
-
-.modul-baru-card:hover .modul-baru-button {
-    background-color: var(--accent-blue);
-    color: var(--dark-navy);
+.modul-card p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 /* ================== FINAL CTA SECTION ================== */
 .cta-akhir {
@@ -1556,4 +1532,178 @@ footer {
     width: 100%;
     height: 100%;
     border: none; /* Menghilangkan border default dari iframe */
+}
+/* ==================
+   GLOSARIUM SECTION (STYLE TOOLTIP BARU)
+   ================== */
+.glossary-section {
+    padding: 120px 0;
+    position: relative;
+}
+.glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.glossary-card {
+    padding: 25px;
+    background-color: var(--light-navy);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.glossary-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-blue);
+    background-color: var(--lightest-navy);
+}
+.glossary-card .term {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--lightest-slate);
+}
+.glossary-card .definition {
+    display: none; /* Definisi disembunyikan, akan dipanggil oleh JS */
+}
+
+/* ==================
+   STYLE TOOLTIP GLOSARIUM (ALTERNATIF BARU)
+   ================== */
+.tooltip {
+    position: absolute; /* Menggunakan absolute agar posisi berdasarkan dokumen */
+    background-color: var(--accent-blue);
+    color: var(--dark-navy);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    width: max-content;
+    text-align: center;
+    z-index: 1001;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    /* Sembunyikan secara default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -100%) scale(0.9); /* Posisi awal di atas & mengecil */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.tooltip.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -120%) scale(1); /* Posisi aktif */
+}
+
+/* Panah kecil di bawah tooltip */
+.tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Posisi di bawah tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: var(--accent-blue) transparent transparent transparent;
+}
+
+.tooltip h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--dark-navy);
+}
+
+.tooltip p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--dark-navy);
+}
+/* ==================
+   STYLE MODAL/POP-UP GLOSARIUM (DESAIN FINAL DISEMPURNAKAN)
+   ================== */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 25, 47, 0.8);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-content {
+    background-color: var(--light-navy);
+    padding: 30px 40px; /* Padding disesuaikan */
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5), 0 0 15px var(--accent-blue); /* Efek glow */
+    
+    /* Animasi muncul dari atas */
+    transform: translateY(-20px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* Awalnya transparan */
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Header di dalam Modal */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--lightest-navy);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.modal-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+    margin: 0; /* Hapus margin default */
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: var(--slate);
+    font-size: 1.5rem; /* Ukuran ikon disesuaikan */
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.modal-close:hover {
+    color: var(--accent-blue);
+    transform: rotate(90deg);
+}
+
+/* Konten Definisi */
+.modal-content p {
+    color: var(--light-slate);
+    line-height: 1.8; /* Jarak antar baris lebih nyaman */
+    font-size: 1.1rem;
 }
