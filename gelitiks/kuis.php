@@ -1,33 +1,48 @@
 <?php
 session_start();
-// Bank Soal Lengkap
+
+// BANK SOAL BARU YANG DISEMPURNAKAN (TOTAL REWORK)
 $questions = [
+    // Soal 1: Phishing Domain
     ['question' => "Anda menerima email dari 'noreply@bnk-bca.com' yang meminta verifikasi data. Apa tanda bahaya utama di sini?", 'options' => ["Nama pengirim 'noreply'", "Meminta verifikasi data", "Alamat email 'bnk-bca.com' yang salah eja", "Email dikirim di luar jam kerja"], 'answer' => 2, 'explanation' => "Alamat email resmi tidak akan menggunakan ejaan yang salah. 'bnk-bca.com' adalah contoh klasik domain palsu yang mencoba meniru 'bca.co.id' atau domain resmi lainnya."],
+    // Soal 2: 2FA & SIM Swap
     ['question' => "Manakah metode Autentikasi Dua Faktor (2FA) yang paling rentan terhadap serangan SIM Swap?", 'options' => ["Aplikasi Authenticator (Google/Authy)", "Kunci Keamanan Fisik (YubiKey)", "Kode verifikasi yang dikirim via SMS", "Sidik jari (biometrik)"], 'answer' => 2, 'explanation' => "2FA via SMS paling rentan karena jika penipu berhasil mengambil alih nomor HP Anda melalui SIM Swap, semua kode OTP akan masuk ke perangkat mereka."],
+    // Soal 3: Trojan & Adware
     ['question' => "Anda mengunduh sebuah software 'gratis' dari situs tidak resmi. Setelah diinstal, laptop menjadi sangat lambat dan penuh iklan. Jenis malware apa yang paling mungkin menginfeksi?", 'options' => ["Worm", "Trojan yang membawa Adware/Spyware", "Ransomware", "Virus Boot Sector"], 'answer' => 1, 'explanation' => "Trojan adalah malware yang menyamar sebagai program sah (seperti software gratis). Seringkali, 'bonus' yang ia bawa adalah Adware (untuk iklan) dan Spyware (untuk memata-matai)."],
+    // Soal 4: Kekuatan Password
     ['question' => "Prinsip 'Panjang Lebih Baik dari Rumit' paling relevan saat membuat...", 'options' => ["PIN ATM", "Password Akun Online", "Kode OTP", "Username"], 'answer' => 1, 'explanation' => "Untuk password, sebuah 'passphrase' yang panjang (misal: 'kuda-terbang-makan-donat-ungu') jauh lebih sulit dipecahkan oleh komputer daripada password pendek yang rumit seperti 'PsWd!@#$'."],
+    // Soal 5: Keamanan Wi-Fi Publik
     ['question' => "Saat berada di Wi-Fi publik (misal: bandara), apa langkah pengamanan terbaik sebelum melakukan transaksi perbankan?", 'options' => ["Menggunakan mode Incognito di browser", "Memastikan situsnya menggunakan HTTPS", "Menggunakan koneksi VPN (Virtual Private Network)", "Mematikan Bluetooth"], 'answer' => 2, 'explanation' => "VPN akan mengenkripsi semua lalu lintas data Anda, menciptakan 'terowongan' aman di dalam jaringan publik yang tidak aman. HTTPS penting, tapi VPN memberikan lapisan perlindungan yang jauh lebih komprehensif."],
+    // Soal 6: Social Engineering
     ['question' => "Seorang teman di media sosial tiba-tiba mengirim pesan berisi link aneh dengan tulisan 'Hei, lihat video memalukanmu di sini!'. Ini adalah contoh dari...", 'options' => ["Serangan Ransomware", "Rekayasa Sosial (Social Engineering)", "Serangan Brute Force", "Malware Trojan"], 'answer' => 1, 'explanation' => "Rekayasa Sosial adalah seni memanipulasi psikologi seseorang (rasa penasaran, panik, takut) untuk membuat mereka melakukan tindakan yang tidak aman, seperti mengklik link berbahaya."],
+    // Soal 7: Fungsi Backup
     ['question' => "Apa fungsi utama dari melakukan backup data dengan strategi 3-2-1?", 'options' => ["Membuat komputer lebih cepat", "Memastikan selalu ada salinan data yang selamat jika terjadi bencana atau serangan ransomware", "Menghemat ruang penyimpanan di hard disk utama", "Agar bisa berbagi file dengan mudah"], 'answer' => 1, 'explanation' => "Tujuan utama backup adalah pemulihan data. Jika perangkat utama rusak atau data dikunci oleh ransomware, Anda masih memiliki salinan aman di tempat lain."],
+    // Soal 8: USB Drop Attack
     ['question' => "Anda menemukan USB flash drive di toilet kantor. Tindakan paling bijak adalah...", 'options' => ["Mencolokkannya ke komputer pribadi untuk melihat isinya", "Mencolokkannya ke komputer kantor yang sudah ada antivirus", "Menyerahkannya ke bagian keamanan atau IT tanpa mencolokkannya sama sekali", "Memformatnya agar bisa digunakan sendiri"], 'answer' => 2, 'explanation' => "USB drive yang tidak dikenal bisa saja berisi malware yang akan otomatis berjalan (autorun) saat dicolokkan. Ini adalah metode serangan klasik yang disebut 'USB Drop Attack'."],
+    // Soal 9: Password Manager
     ['question' => "Password Manager membantu meningkatkan keamanan dengan cara...", 'options' => ["Membuat semua password menjadi sama agar mudah diingat", "Menyimpan password dalam file teks di desktop", "Memungkinkan penggunaan password yang sangat kuat dan unik untuk setiap akun", "Menyembunyikan ikon aplikasi di HP"], 'answer' => 2, 'explanation' => "Kekuatan utama Password Manager adalah kemampuannya untuk membuat dan mengingat puluhan password yang panjang, acak, dan unik untuk setiap situs, sesuatu yang hampir tidak mungkin dilakukan oleh manusia."],
+    // Soal 10: HTTPS
     ['question' => "Anda melihat gembok HTTPS di address bar browser. Apa artinya?", 'options' => ["Situs web ini 100% aman dari semua jenis serangan", "Situs web ini dimiliki oleh pemerintah", "Koneksi antara browser Anda dan server situs web ini terenkripsi", "Situs web ini tidak memiliki iklan"], 'answer' => 2, 'explanation' => "HTTPS (Hypertext Transfer Protocol Secure) memastikan bahwa data yang Anda kirim dan terima dari situs tersebut dienkripsi, sehingga tidak bisa 'diintip' oleh pihak ketiga di tengah jalan. Ini tidak menjamin situsnya sendiri bebas dari malware atau phishing."],
 ];
+
 $total_questions = count($questions);
+$is_quiz_finished = false;
+$show_result_for_question = false;
+$user_answer_index = null;
+$correct_answer_index = null;
+
 if (isset($_GET['action']) && $_GET['action'] == 'start_over') {
-    unset($_SESSION['current_question'], $_SESSION['score'], $_SESSION['answered_questions'], $_SESSION['quiz_in_progress']);
+    unset($_SESSION['current_question'], $_SESSION['score'], $_SESSION['answered_questions']);
     header('Location: kuis.php');
     exit();
 }
-if (!isset($_SESSION['quiz_in_progress'])) {
+if (!isset($_SESSION['current_question'])) {
     $_SESSION['current_question'] = 0;
     $_SESSION['score'] = 0;
     $_SESSION['answered_questions'] = [];
-    $_SESSION['quiz_in_progress'] = true;
 }
-$show_result_for_question = false;
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
-    if ($_POST['action'] == 'submit_answer') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['action']) && $_POST['action'] == 'submit_answer') {
         $user_answer_index = (int)($_POST['answer'] ?? -1);
         $current_question_index = $_SESSION['current_question'];
         if(isset($questions[$current_question_index])) {
@@ -45,17 +60,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     header('Location: kuis.php');
     exit();
 }
-$current_question_index = $_SESSION['current_question'] ?? 0;
+
+$current_question_index = $_SESSION['current_question'];
 $is_quiz_finished = ($current_question_index >= $total_questions);
+
 if (isset($_SESSION['answered_questions'][$current_question_index])) {
     $show_result_for_question = true;
     $user_answer_index = $_SESSION['answered_questions'][$current_question_index];
     $correct_answer_index = $questions[$current_question_index]['answer'];
 }
-if ($is_quiz_finished) {
-    unset($_SESSION['quiz_in_progress']);
-}
-$progress_percentage = $total_questions > 0 ? ($current_question_index / $total_questions) * 100 : 0;
+
+$progress_percentage = $total_questions > 0 ? (($current_question_index) / $total_questions) * 100 : 0;
+if($show_result_for_question) $progress_percentage = (($current_question_index + 1) / $total_questions) * 100;
 if($is_quiz_finished) $progress_percentage = 100;
 ?>
 <!DOCTYPE html>
@@ -63,7 +79,7 @@ if($is_quiz_finished) $progress_percentage = 100;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuis Utama - LetsForensic🛡️</title>
+    <title>Kuis Utama - GELITIKS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,7 +92,10 @@ if($is_quiz_finished) $progress_percentage = 100;
     <canvas id="matrix-canvas"></canvas>
     <nav>
         <div class="container">
-            <a href="index.php" class="logo"><img src="logo-gelitiks.png" alt="" class="logo-icon"><span>LetsForensic🛡️</span></a>
+            <a href="index.php" class="logo">
+                <img src="logo-gelitiks.png" alt="" class="logo-icon">
+                <span>LetsForensic</span>
+            </a>
             <ul>
                 <li><a href="index.php">Beranda</a></li>
                 <li><a href="kuis.php" class="active">Kuis Utama</a></li>
@@ -146,7 +165,7 @@ if($is_quiz_finished) $progress_percentage = 100;
                     <div class="result-navigation">
                         <a href="index.php" class="nav-button-secondary">Kembali ke Beranda</a>
                         <a href="kuis.php?action=start_over" class="nav-button-secondary">Ulangi Kuis</a>
-                        <a href="index.php#modul-pembelajaran" class="nav-button-secondary">Pelajari Modul Lain</a>>
+                        <a href="index.php#modul-pembelajaran" class="nav-button-primary">Pelajari Modul Lain</a>
                     </div>
                 </div>
             <?php endif; ?>
@@ -156,7 +175,6 @@ if($is_quiz_finished) $progress_percentage = 100;
     <script src="matrix.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Script untuk feedback klik
             const form = document.getElementById('quiz-form');
             if (form) {
                 const radios = form.querySelectorAll('input[type="radio"]');
@@ -170,19 +188,15 @@ if($is_quiz_finished) $progress_percentage = 100;
                     });
                 });
             }
-
-            // Script BARU untuk counter skor
             const scoreCounter = document.querySelector('.score-text-main');
             if (scoreCounter) {
                 const finalScore = parseInt(scoreCounter.getAttribute('data-score'));
                 let currentScore = 0;
-                const increment = finalScore / 50; // Menentukan seberapa cepat hitungan naik
-
                 function updateScore() {
                     if (currentScore < finalScore) {
-                        currentScore += increment;
-                        scoreCounter.textContent = Math.ceil(currentScore);
-                        setTimeout(updateScore, 20); // Kecepatan animasi
+                        currentScore++;
+                        scoreCounter.textContent = currentScore;
+                        setTimeout(updateScore, 50);
                     } else {
                         scoreCounter.textContent = finalScore;
                     }

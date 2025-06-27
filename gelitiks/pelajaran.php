@@ -60,6 +60,7 @@ else {
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="page-background">
+    <canvas id="matrix-canvas"></canvas>
     <nav>
         <div class="container">
             <a href="index.php" class="logo">LetsForensic🛡️</a>
@@ -146,5 +147,6 @@ else {
             </div>
         </main>
     </div>
+    <script src="matrix.js"></script>
 </body>
 </html>
