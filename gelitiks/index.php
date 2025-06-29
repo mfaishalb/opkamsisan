@@ -27,16 +27,17 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
 </head>
 <body>
     <canvas id="matrix-canvas"></canvas>
-    <nav>
-        <div class="container">
-            <a href="index.php" class="logo">LetsForensic🛡️</a>
-            <ul>
-                <li><a href="index.php" class="active">Beranda</a></li>
-                <li><a href="tentang.php">Tentang</a></li>
-                <li><a href="kuis.php" class="button-nav">Mulai Kuis</a></li>
-            </ul>
-        </div>
-    </nav>
+        <nav>
+    <div class="container">
+        <a href="index.php" class="logo">LetsForensic🛡️</a>
+        <ul>
+            <li><a href="index.php" class="active">Beranda</a></li>
+            <li><a href="karya.php">Karya</a></li>
+            <li><a href="tentang.php">Tentang</a></li>
+            <li><a href="kuis.php" class="button-nav">Mulai Kuis</a></li>
+        </ul>
+    </div>
+</nav>
     <header class="hero">
         <div class="container hero-content" data-aos="fade-in" data-aos-duration="1000">
             <h1><span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
@@ -57,8 +58,8 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
                           <div class="card-image-wrapper"><img src="d21.png" alt="Proyek D21" class="card-image">
                            </div>
                             <div class="card-content">
-                                <h3>CTF CHALLENGE</h3>
-                                <p>JLihat dan jelajahi proyek lain yang terintegrasi langsung di dalam platform LetsForensic.</p>
+                                <h3>Proyek D21</h3>
+                                <p>Lihat dan jelajahi proyek lain yang terintegrasi langsung di dalam platform LetsForensic.</p>
                                 <span class="baca-selengkapnya">Baca Selengkapnya →</span>
                             </div>
                         </div>
@@ -220,6 +221,55 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
                 </div>
             </div>
         </section> 
+
+        <section class="literasi-siber">
+    <div class="container">
+        <h2>Pojok Literasi Siber</h2>
+        <p class="subjudul">Tingkatkan kewaspadaan digital Anda dengan konten pilihan kami.</p>
+        
+        <div class="galeri-konten">
+            
+    <div class="item-konten" data-aos="fade-up" data-aos-delay="100">
+        <div class="item-konten-gambar" style="background-image: url('https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=2070&auto=form&fit=crop');"></div>
+        <div class="info-konten">
+            <div class="info-konten-header">
+                <span class="kategori kategori-komik"><i class="fas fa-comment-dots"></i> KOMIK</span>
+                <a href="baca-komik.php" target="_blank" class="tombol-baca">Baca Sekarang <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <h3>Awas! Jebakan Phishing Undangan Digital</h3>
+            <p>Kenali ciri-ciri pesan penipuan berkedok undangan .apk agar data pribadimu tidak dicuri.</p>
+        </div>
+    </div>
+
+
+
+<div class="item-konten" data-aos="fade-up" data-aos-delay="200">
+        <div class="item-konten-gambar" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop');"></div>
+        <div class="info-konten">
+            <div class="info-konten-header">
+                <span class="kategori kategori-panduan"><i class="fas fa-book-open"></i> PANDUAN</span>
+                <a href="panduan-password.php" class="tombol-baca">Pelajari Caranya <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <h3>Cara Membuat Kata Sandi Anti-Bobol 2025</h3>
+            <p>Tips praktis untuk membuat dan mengelola kata sandi yang kuat agar semua akunmu tetap aman.</p>
+        </div>
+    </div>
+
+    <div class="item-konten" data-aos="fade-up" data-aos-delay="300">
+        <div class="item-konten-gambar" style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop');"></div>
+        <div class="info-konten">
+            <div class="info-konten-header">
+                <span class="kategori kategori-buku"><i class="fas fa-bookmark"></i> BUKU</span>
+                <a href="rekomendasi-buku.php" class="tombol-baca">Lihat Sinopsis <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <h3>The Art of Deception: Seni Mengelabui</h3>
+            <p>Mengapa manusia adalah celah keamanan terbesar? Temukan jawabannya di buku legendaris ini.</p>
+        </div>
+    </div>
+
+</div>
+    </div>
+</section>
 
         <section class="cta-akhir">
             <div class="container" data-aos="zoom-in">

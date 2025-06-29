@@ -16,8 +16,10 @@
             <a href="index.php" class="logo">LetsForensic🛡️</a>
             <ul>
                 <li><a href="index.php">Beranda</a></li>
+                <li><a href="karya.php">Karya</a></li>
                 <li><a href="index.php#tentang" class="active">Tentang</a></li>
                 <li><a href="kuis.php" class="button-nav">Mulai Kuis</a></li>
+               
             </ul>
         </div>
     </nav>

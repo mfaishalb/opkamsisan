@@ -17,15 +17,17 @@ $topic_data = $learning_data[$topic_key];
 </head>
 <body class="page-background">
      <canvas id="matrix-canvas"></canvas>
-    <nav>
-        <div class="container">
-            <a href="index.php" class="logo">LetsForensic🛡️</a>
-            <ul>
-                <li><a href="index.php">Beranda</a></li>
-                <li><a href="kuis.php" class="button-nav">Kuis Utama</a></li>
-            </ul>
-        </div>
-    </nav>
+   <nav>
+    <div class="container">
+        <a href="index.php" class="logo">LetsForensic🛡️</a>
+        <ul>
+            <li><a href="index.php" class="active">Beranda</a></li>
+            <li><a href="karya.php">Karya</a></li>
+            <li><a href="tentang.php">Tentang</a></li>
+            <li><a href="kuis.php" class="button-nav">Mulai Kuis</a></li>
+        </ul>
+    </div>
+</nav>
 
     <header class="topic-header">
         <div class="container">

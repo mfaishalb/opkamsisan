@@ -66,8 +66,10 @@ else {
             <a href="index.php" class="logo">LetsForensic🛡️</a>
             <ul>
                 <li><a href="index.php">Beranda</a></li>
+                <li><a href="karya.php">Karya</a></li>
                 <li><a href="topik.php?topic=<?php echo $topic_key; ?>">Daftar Bab</a></li>
                 <li><a href="kuis.php" class="button-nav">Kuis Utama</a></li>
+                
             </ul>
         </div>
     </nav>

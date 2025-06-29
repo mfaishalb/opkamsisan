@@ -23,8 +23,10 @@
             </a>
             <ul>
                 <li><a href="index.php">Beranda</a></li>
+                <li><a href="karya.php">Karya</a></li>
                 <li><a href="tentang.php" class="active">Tentang</a></li>
                 <li><a href="kuis.php" class="button-nav">Kuis Utama</a></li>
+                
             </ul>
         </div>
     </nav>

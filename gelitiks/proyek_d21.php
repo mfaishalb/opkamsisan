@@ -19,9 +19,11 @@
             </a>
             <ul>
                 <li><a href="index.php">Beranda</a></li>
+                <li><a href="karya.php">Karya</a></li>
                 <li><a href="tentang.php">Tentang</a></li>
                 <li><a href="proyek_d21.php" class="active">Proyek D21</a></li>
                 <li><a href="kuis.php" class="button-nav">Kuis Utama</a></li>
+               
             </ul>
         </div>
     </nav>
