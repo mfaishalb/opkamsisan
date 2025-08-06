@@ -29,7 +29,7 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
     <canvas id="matrix-canvas"></canvas>
         <nav>
     <div class="container">
-        <a href="index.php" class="logo">LetsForensic🛡️</a>
+        <a href="index.php" class="logo">Scsh</a>
         <ul>
             <li><a href="index.php" class="active">Beranda</a></li>
             <li><a href="karya.php">Karya</a></li>
@@ -59,6 +59,39 @@ unset($_SESSION['quiz_in_progress']); // Hancurkan juga flag ini
                            </div>
                             <div class="card-content">
                                 <h3>Proyek D21</h3>
+                                <p>Lihat dan jelajahi proyek lain yang terintegrasi langsung di dalam platform LetsForensic.</p>
+                                <span class="baca-selengkapnya">Baca Selengkapnya →</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/opkamsisan/d23/" class="feature-card-link" target="_blank">
+                          <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                          <div class="card-image-wrapper"><img src="sandidata.png" alt="Proyek D21" class="card-image">
+                           </div>
+                            <div class="card-content">
+                                <h3>Proyek D23</h3>
+                                <p>Lihat dan jelajahi proyek lain yang terintegrasi langsung di dalam platform LetsForensic.</p>
+                                <span class="baca-selengkapnya">Baca Selengkapnya →</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/opkamsisan/pusertif/" class="feature-card-link" target="_blank">
+                          <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                          <div class="card-image-wrapper"><img src="d22.jpg" alt="Proyek D21" class="card-image">
+                           </div>
+                            <div class="card-content">
+                                <h3>Pusertif</h3>
+                                <p>Lihat dan jelajahi proyek lain yang terintegrasi langsung di dalam platform LetsForensic.</p>
+                                <span class="baca-selengkapnya">Baca Selengkapnya →</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/opkamsisan/BSrE/form_upload.php" class="feature-card-link" target="_blank">
+                          <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                          <div class="card-image-wrapper"><img src="logo-bsre.png" alt="Proyek D21" class="card-image">
+                           </div>
+                            <div class="card-content">
+                                <h3>BSrE</h3>
                                 <p>Lihat dan jelajahi proyek lain yang terintegrasi langsung di dalam platform LetsForensic.</p>
                                 <span class="baca-selengkapnya">Baca Selengkapnya →</span>
                             </div>
