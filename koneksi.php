@@ -2,9 +2,9 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "sandbox"; // ganti sesuai nama database kamu
+$dbname = "sandbox";
 
-// Buat koneksi
+// Membuat koneksi
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Cek koneksi

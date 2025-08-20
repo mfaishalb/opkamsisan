@@ -6,14 +6,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+
+<header class="app-header">
+  <div class="brand">
+    <div class="logo">🔐</div>
+    <div class="brand-text">
+      <div class="brand-title">Sandi Data Mini</div>
+      <div class="brand-subtitle">
+        Model: <span class="chip chip-sandi" title="Enkripsi & pemrosesan data">Sandi Data</span>
+        <span class="chip chip-siber" title="Keamanan & hardening">Siber</span>
+      </div>
+    </div>
+  </div>
+  <nav class="nav-links">
+    <a href="index.php">Enkripsi</a>
+    <a href="decrypt_all.php">Dekripsi</a>
+    <a href="generate_form.php">Kunci</a>
+  </nav>
+</header>
+<div class="page-shell"><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dekripsi Data - Sandi Data Mini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container page-card">
         <h1>Sandi Data Mini</h1>
         <h2>Dekripsi Semua Data</h2>
 
         <form action="decrypt_all.php" method="post" enctype="multipart/form-data">
             <label for="private_key">Unggah Private Key (private.pem)</label>
-            <input type="file" name="private_key" required>
-            <button type="submit">Dekripsi Semua</button>
+            <input type="file" name="private_key" id="private_key" accept=".pem" required>
+            <button type="submit">Dekripsi</button>
         </form>
 
 <?php
